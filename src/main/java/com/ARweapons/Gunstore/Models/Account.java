@@ -10,13 +10,13 @@ public class Account {
 
     @Id
     private String id;
-    @NotBlank(message = "Field cannnot be empty")
+ //   @NotBlank(message = "Field cannnot be empty")
     private String username;
-    @NotBlank(message = "Field cannot be empty")
+//    @NotBlank(message = "Field cannot be empty")
     private String password;
     @NotBlank(message = "Field cannot be empty")
     private String email;
-    @NotNull(message = "Field cannot be blank")
+//    @NotNull(message = "Field cannot be blank")
     private String dateOfBirth;
     private String gender;
     private String firstname;
@@ -66,5 +66,17 @@ public class Account {
 
     public String[] getTypeOfWeaponLicense() {
         return typeOfWeaponLicense;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
